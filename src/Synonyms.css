@@ -1,0 +1,27 @@
+.Synonyms {
+    margin: 25px 0;
+    padding: 0;
+}
+
+.Synonyms li {
+    list-style: none;
+    display: inline;
+    overflow-wrap: break-word;
+    margin-right: 20px;
+}
+
+.Synonyms button {
+    text-decoration: none;
+    color: #6ba4eb;
+    border: 1px solid #efc12c;
+    border-radius: 25px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    background-color: #fdffd1;
+}
+
+.Synonyms button:hover {
+    color: #0364db;
+    background-color: #ffdb43;
+}

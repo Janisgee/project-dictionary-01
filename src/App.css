@@ -3,6 +3,11 @@
     margin: 50px auto;
 }
 
+.App footer a {
+    font-family: arial;
+    text-decoration: none;
+}
+
 .App .logoHeading {
     margin: 100px 0 50px;
     display: flex;
@@ -40,7 +45,7 @@
 }
 
 .App .partOfSpeech {
-    color: #df526a;
+    color: #e2314f;
 }
 
 .App .example {

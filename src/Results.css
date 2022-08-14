@@ -1,0 +1,11 @@
+section {
+    background: #e9e9d55c;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px auto;
+    box-shadow: 1px 2px 4px grey;
+}
+
+.Results .Meaning .Similar {
+    color: #6ba4eb;
+}
