@@ -9,18 +9,11 @@ export default function Dictionary(props) {
   let [loaded, setLoaded] = useState(false);
   let [photos, setPhotos] = useState(null);
 
-  function handleDictionaryResponse(response) {
-    setResults(response.data[0]);
-  }
-  function handlePexelsResponse(response) {
-    setPhotos(response.data.photos);
-  }
-
   function doSearch(searchWord) {
     const apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${searchWord}`;
     axios.get(apiUrl).then(handleDictionaryResponse);
 
-    const pexelApiKey = `563492ad6f91700001000001ef2a7f4d89e64dcd9a1bfa9cdc98ff70`;
+    const pexelApiKey = `563492ad6f91700001000001fe893239473d4c79bb4b9aa25aaf56d0`;
     const pexelUrl = `https://api.pexels.com/v1/search?query=${searchWord}&per_page=9`;
     let headers = { Authorization: `Bearer ${pexelApiKey}` };
 
@@ -41,6 +34,12 @@ export default function Dictionary(props) {
   function load() {
     setLoaded(true);
     doSearch(word);
+  }
+  function handleDictionaryResponse(response) {
+    setResults(response.data[0]);
+  }
+  function handlePexelsResponse(response) {
+    setPhotos(response.data.photos);
   }
   if (loaded) {
     return (

@@ -66,3 +66,18 @@
         transform: rotate(360deg);
     }
 }
+
+@media (max-width: 768px) {
+    .App-logo {
+        display: none;
+    }
+    .App .logoHeading h1 {
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    .App .logoHeading h1 {
+        font-size: 70px;
+    }
+}
