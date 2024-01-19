@@ -18,7 +18,7 @@ export default function Dictionary(props) {
       '563492ad6f91700001000001fe893239473d4c79bb4b9aa25aaf56d0',
     );
 
-    const query = setWord;
+    const query = searchWord;
     client.photos.search({ query, per_page: 9 }).then(handlePexelsResponse);
 
     // const pexelApiKey = `563492ad6f91700001000001fe893239473d4c79bb4b9aa25aaf56d0`;
